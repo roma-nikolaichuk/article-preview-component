@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap");
+
+// Font Family
+$theme-text-font: "Manrope", sans-serif;
+
+// Colors
+$theme-very-dark-grayish-blue: hsl(217, 19%, 35%);
+$theme-desaturated-dark-blue: hsl(214, 17%, 51%);
+$theme-grayish-blue: hsl(212, 23%, 69%);
+$theme-light-grayish-blue: hsl(210, 46%, 95%);
+
+// Transition
+$theme-transition: 0.3s ease-in-out;
+
+$media: (
+  sm: 576px,
+  // Small devices
+  md: 768px,
+  // Medium devices
+  lg: 992px,
+  // Large devices
+  xl: 1200px,
+  // X-Large devices
+  2xl: 1400px,
+  // XX-Large devices
+  3xl: 1900px,
+  // XXX-Large devices
+  rwd: 364px,
+  // Custom device
+);
+
+// Border Shadow
+$theme-box-shadow: 0 0.063rem 0.188rem rgba($theme-desaturated-dark-blue, 0.12),
+  0 0.063rem 0.125rem rgba($theme-desaturated-dark-blue, 0.24);
+$theme-box-shadow-hover: 0 0.875rem 1.75rem
+    rgba($theme-desaturated-dark-blue, 0.25),
+  0 0.625rem 0.625rem rgba($theme-desaturated-dark-blue, 0.22);

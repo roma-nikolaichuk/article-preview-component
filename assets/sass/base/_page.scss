@@ -1,0 +1,10 @@
+body {
+  font-family: $theme-text-font;
+  font-size: 0.813rem;
+  color: $theme-grayish-blue;
+  width: 100%;
+  min-height: 100vh;
+  background-color: $theme-light-grayish-blue;
+
+  @include center-grid;
+}

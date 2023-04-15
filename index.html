@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Roman Nikolaichuk">
+    <meta
+      name="description"
+      content="Article preview Component Solution for FrontendMentor.io. Users should be able to see the social share links when they click the share icon."
+    >
+    <meta
+      name="keywords"
+      content="Frontend Mentor, Frontend, Mentor, Article preview Component, Article preview Component Solution, Roman Nikolaichuk, FrontendMentor.io, Roman Nikolaichuk Frontend"
+    >
+    <title>Frontend Mentor | Article preview component</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    >
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    >
+    <script src="./assets/js/main.js" defer></script>
+  </head>
+  <body>
+    <!-- Start of the main container -->
+    <main>
+      <h1 class="sr-only">Article preview component</h1>
+
+      <article class="article-preview animate__animated animate__fadeInDown">
+        <a
+          href="#"
+          class="article-preview__image-link animate__animated animate__bounceInLeft"
+        >
+          <img
+            src="./assets/images/drawers.jpg"
+            alt="Article Image"
+            class="article-preview__image"
+          >
+        </a>
+
+        <div
+          class="article-preview__content animate__animated animate__bounceInRight"
+        >
+          <h2 class="article-preview__title">
+            <a href="#" class="article-preview__title-link"
+              >Shift the overall look and feel by adding these wonderful touches
+              to furniture in your home</a
+            >
+          </h2>
+          <p class="article-preview__excerpt">
+            Ever been in a room and felt like something was missing? Perhaps it
+            felt slightly bare and uninviting. I’ve got some simple tips to help
+            you make any room feel complete.
+          </p>
+
+          <div
+            class="article-preview__meta animate__animated animate__bounceInRight"
+          >
+            <figure class="article-preview__author">
+              <img
+                src="./assets/images/avatar-michelle.jpg"
+                alt="Michelle Appleton"
+                class="article-preview__avatar"
+                width="40"
+                height="40"
+              >
+
+              <figcaption class="article-preview__author-info">
+                <p class="article-preview__author-name">Michelle Appleton</p>
+                <time datetime="2020-06-28" class="article-preview__meta-item"
+                  >28 Jun 2020</time
+                >
+              </figcaption>
+            </figure>
+
+            <button
+              class="article-preview__share-button js-toggle-tip toggle-tip"
+              aria-label="Share"
+              aria-haspopup="true"
+              aria-expanded="false"
+              aria-controls="share"
+            >
+              <img
+                class="article-preview__share-icon"
+                src="./assets/images/icon-share.svg"
+                alt="Share"
+              >
+            </button>
+
+            <div
+              id="share-links"
+              class="article-preview__share-links js-tooltip dialog"
+              role="tooltip"
+              aria-hidden="true"
+            >
+              <h2 class="article-preview__share-title">Share</h2>
+              <a href="#" class="article-preview__share-link">
+                <img
+                  src="./assets/images/icon-facebook.svg"
+                  alt="Facebook"
+                  class="article-preview__share-link-icon"
+                >
+              </a>
+
+              <a href="#" class="article-preview__share-link">
+                <img
+                  src="./assets/images/icon-twitter.svg"
+                  alt="Twitter"
+                  class="article-preview__share-link-icon"
+                >
+              </a>
+
+              <a href="#" class="article-preview__share-link">
+                <img
+                  src="./assets/images/icon-pinterest.svg"
+                  alt="Pinterest"
+                  class="article-preview__share-link-icon"
+                >
+              </a>
+            </div>
+          </div>
+        </div>
+      </article>
+    </main>
+    <!-- End of the main container -->
+    <!-- Start of the footer -->
+    <footer class="footer">
+      <button
+        class="footer__button js-toggle-tip animate__animated animate__fadeInBottomRight"
+        type="button"
+        aria-label="Attribution"
+        aria-haspopup="true"
+        aria-expanded="false"
+        aria-controls="attribution"
+      >
+        <img
+          class="footer__image"
+          src="https://avatars.githubusercontent.com/u/107611767?s=400&u=af2347175f31d710bee7ec634f994ae53d460731&v=4"
+          alt=""
+          width="50"
+          height="50"
+        >
+      </button>
+
+      <div
+        id="attribution"
+        role="tooltip"
+        class="footer__attribution footer__dialog js-tooltip"
+      >
+        <p class="footer__text">
+          Challenge by
+          <a
+            href="https://www.frontendmentor.io/challenges/article-preview-component-dYBN_pYFT"
+            target="_blank"
+            rel="noreferrer noopener"
+            title="Open in new tab"
+            class="footer__link"
+            >Frontend Mentor</a
+          >. Coded by
+          <a
+            href="https://github.com/roma-nikolaichuk/article-preview-component"
+            target="_blank"
+            rel="noreferrer noopener"
+            title="Open in new tab"
+            class="footer__link"
+            >Roman Nikolaichuk</a
+          >.
+        </p>
+      </div>
+    </footer>
+    <!-- End of the footer -->
+  </body>
+</html>
